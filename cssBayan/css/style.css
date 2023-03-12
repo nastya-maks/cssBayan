@@ -96,41 +96,21 @@ input {
         visibility: visible;
         padding-top: 1rem;
     }
-    .wrapper:hover .arrow {
-        visibility: visible;
-    }
-    .wrapper:hover .bayan-title {
-        color: #335FFF;
-    }
-    .bayan-item:hover .bayan-title .arrow {
-        transform: rotate(45deg);
-    }
+    .wrapper:hover .arrow {visibility: visible;}
+    .wrapper:hover .bayan-title {color: #335FFF;}
+    .bayan-item:hover .bayan-title .arrow {transform: rotate(45deg);}
 }
 
 @media screen and (min-width: 820px) and (max-width: 1279px) {
-    .container {
-        width: 95%;
-        margin: 0 auto;
-    }
-    .wrapper .arrow {
-        visibility: visible;
-    }
+    .container {width: 95%; margin: 0 auto;}
+    .wrapper .arrow {visibility: visible;}
 }
 
 @media screen and (max-width: 819px) {
-    .container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    .wrapper .arrow {
-        visibility: visible;
-    }
-    h1 {
-        font-size: 2rem;
-    }
-    h3 {
-        font-size: 1rem;
-    }
+    .container {width: 90%; margin: 0 auto;}
+    .wrapper .arrow {visibility: visible;}
+    h1 {font-size: 2rem;}
+    h3 {font-size: 1rem;}
 }
 
 
