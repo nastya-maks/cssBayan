@@ -1,0 +1,125 @@
+* {box-sizing: border-box;}
+h1, h2, h3, h4, h5 {margin: 0;}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    background-color: #EEEFF3;
+    color: #333641;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 40rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+input {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.bayan-item {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+}
+
+.bayan-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 0%;
+    cursor: pointer;
+}
+
+.bayan-content {
+    display: flex;
+    justify-content: center;
+}
+
+.bayan-item .bayan-content img {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.bayan-item input:checked ~ .bayan-content img {
+    width: 50%;
+    height: 50%;
+    opacity: 1;
+    visibility: visible;
+    padding-top: 1rem;
+}
+
+.wrapper .arrow {
+    visibility: hidden;
+}
+
+.bayan-item input:checked + label .bayan-title .arrow {
+    transform: rotate(45deg); 
+}
+
+.bayan-item input:checked + label .bayan-title {
+    color: #335FFF;
+}
+
+@media screen and (min-width: 1280px) {
+    .bayan-item:hover .bayan-content img {
+        width: 50%;
+        height: 50%;
+        opacity: 1;
+        visibility: visible;
+        padding-top: 1rem;
+    }
+    .wrapper:hover .arrow {visibility: visible;}
+    .wrapper:hover .bayan-title {color: #335FFF;}
+    .bayan-item:hover .bayan-title .arrow {transform: rotate(45deg);}
+}
+
+@media screen and (min-width: 820px) and (max-width: 1279px) {
+    .container {width: 95%; margin: 0 auto;}
+    .wrapper .arrow {visibility: visible;}
+    h1 {font-size: 2.5rem;}
+    h3 {font-size: 1.1rem;}
+}
+
+@media screen and (max-width: 819px) {
+    .container {width: 90%; margin: 0 auto;}
+    .wrapper .arrow {visibility: visible;}
+    h1 {font-size: 2rem;}
+    h3 {font-size: 1rem;}
+}
+
+
+
+
+
+
+
+
+
