@@ -104,6 +104,8 @@ input {
 @media screen and (min-width: 820px) and (max-width: 1279px) {
     .container {width: 95%; margin: 0 auto;}
     .wrapper .arrow {visibility: visible;}
+    h1 {font-size: 2.5rem;}
+    h3 {font-size: 1.1rem;}
 }
 
 @media screen and (max-width: 819px) {
